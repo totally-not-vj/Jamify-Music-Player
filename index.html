@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music is here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="LOGO 1.jpg" alt="JAMIFY"> JAMIFY</li>
+            <li>Home</li>
+            <li><a href="#" id="aboutLink">About</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="songList">
+            <h1>Shivrajya Vandan</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Shivba Raja</span>
+                    <span class="songlistplay"><span class="timestamp">2.08 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">5:42 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">4.18 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">2.44 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">5:48 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">1.21 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">4.45 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+     <!-- About Modal (hidden by default) -->
+     <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>About JAMIFY</h2>
+            <p><strong>JAMIFY</strong> is a music streaming web application designed as part of our semester 3 mini-project. The goal of this project is to replicate a simplified version of popular music streaming platforms like Spotify.</p>
+            
+            <h3>Project Features:</h3>
+            <ul style="text-align: left;">
+                <li>Play, pause, and skip through a list of preloaded songs.</li>
+                <li>Interactive user interface with song titles and playback controls.</li>
+                <li>Responsive design for both desktop and mobile devices.</li>
+                <li>Progress bar to indicate song playback status.</li>
+                <li>Smooth and engaging user experience using JavaScript for song control.</li>
+            </ul>
+    
+            <h3>Technologies Used:</h3>
+            <ul style="text-align: left;">
+                <li><strong>HTML</strong> - For structuring the web page layout.</li>
+                <li><strong>CSS</strong> - For designing a visually appealing user interface.</li>
+                <li><strong>JavaScript</strong> - For dynamic song controls and interactions.</li>
+            </ul>
+    
+            <h3>Goal:</h3>
+            <p>The primary objective of this project is to deepen our understanding of front-end web development using core technologies. We aimed to create an interactive and responsive music player that mimics a real-world application, demonstrating practical coding skills in HTML, CSS, and JavaScript.</p>
+    
+            <h3>Team Members:</h3>
+            <p></p>
+    
+            <button id="closeButton" class="modal-close-button">Close</button>
+        </div>
+    </div>
+    
+
+    <div class="bottom">
+        <!-- Already in your code -->
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif">
+            <span id="masterSongName">Shwasat Raja</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>
